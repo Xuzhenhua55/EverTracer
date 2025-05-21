@@ -38,7 +38,7 @@ We use LLaMA3 as the default model and XSUM as the default fingerprint dataset f
 
 This section introduces the core pipeline of EverTracer — fingerprint injection and probabilistic variation–based fingerprint verification, aligned with the Effectiveness Evaluation in the paper.
 
-<div style="display: flex; justify-content: center; margin: 20px 0;">
+<div style="display: flex; justify-content: flex-start; margin: 20px 0;">
     <img src="Figures/overall.png" alt="Overall Architecture" style="width: 50%;">
 </div>
 
@@ -212,21 +212,21 @@ We evaluate four different merging strategies and their impact on model performa
 
 <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
     <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
-        <div style="text-align: center; width: 45%;">
+        <div style="text-align: center; width: 50%;">
             <h4>Task-based Merging</h4>
             <img src="Figures/Mtask_merge.png" alt="Task-based Merging Results" style="width: 100%;">
         </div>
-        <div style="text-align: center; width: 45%;">
+        <div style="text-align: center; width: 50%;">
             <h4>Task-based Merging with DARE</h4>
             <img src="Figures/MtaskDARE_merge.png" alt="Task-based Merging with DARE Results" style="width: 100%;">
         </div>
     </div>
     <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
-        <div style="text-align: center; width: 45%;">
+        <div style="text-align: center; width: 50%;">
             <h4>TIES Merging</h4>
             <img src="Figures/Mties_merge.png" alt="TIES Merging Results" style="width: 100%;">
         </div>
-        <div style="text-align: center; width: 45%;">
+        <div style="text-align: center; width: 50%;">
             <h4>TIES Merging with DARE</h4>
             <img src="Figures/MtiesDARE_merge.png" alt="TIES Merging with DARE Results" style="width: 100%;">
         </div>
@@ -323,7 +323,7 @@ bash eval_harmlessness.sh
 The evaluation script will generate a log file in the current directory, containing detailed metrics and evaluation results for each harmlessness criterion.
 
 3. **Results Analysis**:
-<div style="display: flex; justify-content: center; margin: 20px 0;">
+<div style="display: flex; justify-content: flex-start; margin: 20px 0;">
     <img src="Figures/harmlessness-results.png" alt="Harmlessness Evaluation Results" style="width: 50%;">
 </div>
 
