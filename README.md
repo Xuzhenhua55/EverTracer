@@ -210,25 +210,25 @@ The merging process will create the following directories under the target model
 
 We evaluate four different merging strategies and their impact on model performance. The following figures illustrate the results:
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 50%; margin: 0 auto;">
-    <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
-        <div style="text-align: center; width: 50%;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <div style="text-align: center;">
             <h4>Task-based Merging</h4>
-            <img src="Figures/Mtask_merge.png" alt="Task-based Merging Results" style="width: 100%;">
+            <img src="Figures/Mtask_merge.png" alt="Task-based Merging Results" style="width: 300px; height: 200px; object-fit: contain;">
         </div>
-        <div style="text-align: center; width: 50%;">
+        <div style="text-align: center;">
             <h4>Task-based Merging with DARE</h4>
-            <img src="Figures/MtaskDARE_merge.png" alt="Task-based Merging with DARE Results" style="width: 100%;">
+            <img src="Figures/MtaskDARE_merge.png" alt="Task-based Merging with DARE Results" style="width: 300px; height: 200px; object-fit: contain;">
         </div>
     </div>
-    <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
-        <div style="text-align: center; width: 50%;">
+    <div style="display: flex; justify-content: center; gap: 20px;">
+        <div style="text-align: center;">
             <h4>TIES Merging</h4>
-            <img src="Figures/Mties_merge.png" alt="TIES Merging Results" style="width: 100%;">
+            <img src="Figures/Mties_merge.png" alt="TIES Merging Results" style="width: 300px; height: 200px; object-fit: contain;">
         </div>
-        <div style="text-align: center; width: 50%;">
+        <div style="text-align: center;">
             <h4>TIES Merging with DARE</h4>
-            <img src="Figures/MtiesDARE_merge.png" alt="TIES Merging with DARE Results" style="width: 100%;">
+            <img src="Figures/MtiesDARE_merge.png" alt="TIES Merging with DARE Results" style="width: 300px; height: 200px; object-fit: contain;">
         </div>
     </div>
 </div>
