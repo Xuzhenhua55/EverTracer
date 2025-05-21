@@ -39,7 +39,7 @@ We use LLaMA3 as the default model and XSUM as the default fingerprint dataset f
 This section introduces the core pipeline of EverTracer — fingerprint injection and probabilistic variation–based fingerprint verification, aligned with the Effectiveness Evaluation in the paper.
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-    <img src="Figures/overall.png" alt="Overall Architecture" style="width: 50vw;">
+    <img src="Figures/overall.png" alt="Overall Architecture" style="width: 50%;">
 </div>
 
 The figure above illustrates the complete workflow of EverTracer, including:
@@ -324,7 +324,7 @@ The evaluation script will generate a log file in the current directory, contain
 
 3. **Results Analysis**:
 <div style="display: flex; justify-content: center; margin: 20px 0;">
-    <img src="Figures/harmlessness-results.png" alt="Harmlessness Evaluation Results" style="width: 50vw;">
+    <img src="Figures/harmlessness-results.png" alt="Harmlessness Evaluation Results" style="width: 50%;">
 </div>
 
 The results demonstrate that our approach maintains comparable performance with baseline methods while ensuring model safety and reliability. The evaluation metrics include:
