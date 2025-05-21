@@ -1,0 +1,10 @@
+models:
+  - model: ../../../TrainedCheckpoint/Llama-3-8B/lora/sft/EverTracer/xsum/target/100/merge_lora
+    parameters:
+      weight: 0.8
+  - model: meta-llama/Llama-3-8B-Instruct
+    parameters:
+      weight: 0.2
+merge_method: task_arithmetic
+dtype: float32
+base_model:   meta-llama/Llama-3-8B

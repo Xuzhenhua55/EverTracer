@@ -1,0 +1,15 @@
+models:
+  - model: ../../../TrainedCheckpoint/Llama-3-8B/lora/sft/EverTracer/xsum/target/100/merge_lora
+    parameters:
+      weight: 0.5
+      density: 0.4
+  - model: meta-llama/Llama-3-8B-Instruct
+    parameters:
+      weight: 0.5
+      density: 0.4
+merge_method: ties
+base_model: meta-llama/Llama-3-8B
+parameters:
+  normalize: true
+  int8_mask: true
+dtype: float32
