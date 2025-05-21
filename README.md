@@ -38,7 +38,9 @@ We use LLaMA3 as the default model and XSUM as the default fingerprint dataset f
 
 This section introduces the core pipeline of EverTracer — fingerprint injection and probabilistic variation–based fingerprint verification, aligned with the Effectiveness Evaluation in the paper.
 
-![Overall Architecture](Figures/overall.png)
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+    <img src="Figures/overall.png" alt="Overall Architecture" style="width: 50vw;">
+</div>
 
 The figure above illustrates the complete workflow of EverTracer, including:
 1. Fingerprint embedding through LoRA-based fine-tuning
@@ -208,25 +210,26 @@ The merging process will create the following directories under the target model
 
 We evaluate four different merging strategies and their impact on model performance. The following figures illustrate the results:
 
-<div style="display: flex; justify-content: space-between; margin: 20px 0;">
-    <div style="flex: 1; margin-right: 10px;">
-        <h4>Task-based Merging</h4>
-        <img src="Figures/Mtask_merge.png" alt="Task-based Merging Results" style="width: 100%; max-width: 400px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
+        <div style="text-align: center; width: 45%;">
+            <h4>Task-based Merging</h4>
+            <img src="Figures/Mtask_merge.png" alt="Task-based Merging Results" style="width: 100%;">
+        </div>
+        <div style="text-align: center; width: 45%;">
+            <h4>Task-based Merging with DARE</h4>
+            <img src="Figures/MtaskDARE_merge.png" alt="Task-based Merging with DARE Results" style="width: 100%;">
+        </div>
     </div>
-    <div style="flex: 1; margin-left: 10px;">
-        <h4>Task-based Merging with DARE</h4>
-        <img src="Figures/MtaskDARE_merge.png" alt="Task-based Merging with DARE Results" style="width: 100%; max-width: 400px;">
-    </div>
-</div>
-
-<div style="display: flex; justify-content: space-between; margin: 20px 0;">
-    <div style="flex: 1; margin-right: 10px;">
-        <h4>TIES Merging</h4>
-        <img src="Figures/Mties_merge.png" alt="TIES Merging Results" style="width: 100%; max-width: 400px;">
-    </div>
-    <div style="flex: 1; margin-left: 10px;">
-        <h4>TIES Merging with DARE</h4>
-        <img src="Figures/MtiesDARE_merge.png" alt="TIES Merging with DARE Results" style="width: 100%; max-width: 400px;">
+    <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
+        <div style="text-align: center; width: 45%;">
+            <h4>TIES Merging</h4>
+            <img src="Figures/Mties_merge.png" alt="TIES Merging Results" style="width: 100%;">
+        </div>
+        <div style="text-align: center; width: 45%;">
+            <h4>TIES Merging with DARE</h4>
+            <img src="Figures/MtiesDARE_merge.png" alt="TIES Merging with DARE Results" style="width: 100%;">
+        </div>
     </div>
 </div>
 
@@ -320,9 +323,9 @@ bash eval_harmlessness.sh
 The evaluation script will generate a log file in the current directory, containing detailed metrics and evaluation results for each harmlessness criterion.
 
 3. **Results Analysis**:
-The following figure illustrates the harmlessness evaluation results across different metrics:
-
-![Harmlessness Evaluation Results](Figures/harmlessness-results.png)
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+    <img src="Figures/harmlessness-results.png" alt="Harmlessness Evaluation Results" style="width: 50vw;">
+</div>
 
 The results demonstrate that our approach maintains comparable performance with baseline methods while ensuring model safety and reliability. The evaluation metrics include:
 - Toxicity scores
