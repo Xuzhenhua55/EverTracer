@@ -210,7 +210,7 @@ The merging process will create the following directories under the target model
 
 We evaluate four different merging strategies and their impact on model performance. The following figures illustrate the results:
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 50%; margin: 0 auto;">
     <div style="display: flex; justify-content: center; gap: 20px; width: 100%;">
         <div style="text-align: center; width: 50%;">
             <h4>Task-based Merging</h4>
